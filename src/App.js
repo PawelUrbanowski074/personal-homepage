@@ -1,7 +1,9 @@
 import HeroInfo from "./components/Hero";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 import { Container } from "./styled";
 import { skills, nextSkills } from "./components/Skills/skills";
+
 function App() {
   return (
     <Container>
@@ -15,7 +17,7 @@ function App() {
           header="What I want to lern next:"
           skills={nextSkills}
         />
-        {/* <Contact/> */}
+        <Contact/>
       </main>
     </Container>
   );
