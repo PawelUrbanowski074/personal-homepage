@@ -10,8 +10,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: ${({ theme }) => theme.color.white};
+    font-family: 'Inter', sans-serif;
+    background: ${({ theme }) => theme.color.background};
+    color: ${({ theme }) => theme.color.text};
   }
 
   code {
