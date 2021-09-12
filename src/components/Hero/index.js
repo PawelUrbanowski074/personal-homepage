@@ -1,7 +1,7 @@
 import pawel from "../../images/pawel.jpg";
 import { Description, Hero, HireMeButton, HireMeIcon, Image, Name, ThisIs, Tile } from "./styled";
 
-export const HeroInfo = () => (
+const HeroInfo = () => (
   <Tile>
     <Image src={pawel} alt="" />
     <Hero>
@@ -18,3 +18,5 @@ export const HeroInfo = () => (
   </Tile>
 
 );
+
+export default HeroInfo;
