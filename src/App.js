@@ -4,10 +4,12 @@ import Contact from "./components/Contact";
 import { Container } from "./styled";
 import { skills, nextSkills } from "./components/Skills/skills";
 import Portfolio from "./components/Portfolio";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 
 function App() {
   return (
     <Container>
+      <ThemeSwitcher />
       <HeroInfo />
       <main>
         <Skills

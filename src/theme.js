@@ -7,7 +7,7 @@ const colorNames = {
   iron: "#D1D5DA60",
   slateGray: "#6E7E91",
   black: "#000000",
-  
+  lightGray: "#E5E5E5",
 };
 
 const common = {
@@ -30,5 +30,7 @@ export const themeLight = {
     shadowBorder2: colorNames.violet2,
     shadowBorder3: colorNames.violet3,
     blueText: colorNames.scienceBlue,
+    switchBackground: colorNames.lightGray,
+    switchIcons: colorNames.slateGray,
   },
 };
