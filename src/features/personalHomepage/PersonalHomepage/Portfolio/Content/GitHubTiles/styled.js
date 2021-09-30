@@ -17,6 +17,7 @@ export const Tile = styled.li`
   border-radius: ${({ theme }) => theme.borderRadiusSmall};
   padding: 56px;
   margin: 0;
+  transition: border-color 0.3s;
 `;
 
 export const Title = styled.h3`
@@ -30,26 +31,30 @@ export const Title = styled.h3`
 export const Description = styled.p`
   margin-top: 24px;
   line-height: 140%;
-  word-break: break-word;
   color: ${({ theme }) => theme.color.secondaryText};
 `;
 
-export const Links = styled.div`
+export const Links = styled.dl`
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 20px;
+  grid-gap: 8px;
   line-height: 160%;
-  margin-top: 24px;
+  margin: 24px 0 0 0;
   word-break: break-all;
 `;
 
-export const LinkDescription = styled.div`
-  color: ${({ theme }) => theme.color.secondaryText};
+export const LinksRow = styled.div`
+  display: grid;
+  grid-template-columns: 4em 1fr;
 `;
+
+export const LinksValue = styled.dd`
+  margin: 0;
+`;
+
 
 export const LinkHref = styled.a`
   color: ${({ theme }) => theme.color.scienceBlue};
   text-decoration: none;
   border-bottom: 1px solid ${({theme}) => theme.color.buttonBorder};
-  
+  padding-bottom: 1px;
 `;

@@ -1,4 +1,4 @@
-import { LinkDescription, Tile, Description, LinkHref, Links, Title, List } from "./styled";
+import { LinksValue, LinksRow, Tile, Description, LinkHref, Links, Title, List } from "./styled";
 
 const GitHubTiles = ({ repositories }) => {
 
@@ -10,16 +10,21 @@ const GitHubTiles = ({ repositories }) => {
           <Description>{description}</Description>
           <Links>
             {!!homepage && (
-              <div>
-                <LinkDescription>Demo:</LinkDescription>
-                <LinkHref target="_blank" rel="noreferrer" href={homepage}>{homepage}</LinkHref>
-              </div>
+              <LinksRow>
+                <dt>Demo:</dt>
+                <LinksValue>
+                  <LinkHref target="_blank" rel="noreferrer" href={homepage}>{homepage}</LinkHref>
+                </LinksValue>
+              </LinksRow>
             )}
-            <LinkDescription>Code:</LinkDescription>
-            <LinkHref target="_blank" rel="noreferrer" href={html_url}>{html_url}</LinkHref>
+            <LinksRow>
+              <dt>Code:</dt>
+              <LinksValue>
+                <LinkHref target="_blank" rel="noreferrer" href={html_url}>{html_url}</LinkHref>
+              </LinksValue>
+            </LinksRow>
           </Links>
         </Tile>
-
       ))}
     </List>
   );
