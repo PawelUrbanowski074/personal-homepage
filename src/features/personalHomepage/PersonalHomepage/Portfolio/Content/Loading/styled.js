@@ -1,30 +1,24 @@
 import styled from "styled-components";
-import { ReactComponent as Loading } from "../Icons/icon-spinner.svg";
+import { ReactComponent as Loading } from "../../Icons/icon-spinner.svg";
 
 export const Wrapper = styled.div`
     text-align: center;
-    margin-top: 64px;
-`;
-
-export const Wait = styled.p`
+    margin-top: 88px;
     font-size: 20px;
-    line-height: 25px;
+    color: ${({ theme }) => theme.color.textPrimary };
+    display: grid;
+    justify-items: center;
 `;
 
 export const LoadingIcon = styled(Loading)`
     margin-top: 48px;
-    max-width: 160px;
-    max-height: 160px;
-
     animation-name: rotate;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    color: ${({ theme }) => theme.color.spinnerColor };
 
     @keyframes rotate {
-      from{
-        transform: rotate(0deg);
-      };
       to{
         transform: rotate(360deg);
       };
