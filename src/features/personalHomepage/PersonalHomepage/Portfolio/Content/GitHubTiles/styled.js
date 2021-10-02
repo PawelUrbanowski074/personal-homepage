@@ -18,6 +18,10 @@ export const Tile = styled.li`
   padding: 56px;
   margin: 0;
   transition: border-color 0.3s;
+
+  &:hover {
+    border: 6px solid ${({ theme }) => theme.color.borderHover};
+  }
 `;
 
 export const Title = styled.h3`
@@ -57,4 +61,12 @@ export const LinkHref = styled.a`
   text-decoration: none;
   border-bottom: 1px solid ${({theme}) => theme.color.buttonBorder};
   padding-bottom: 1px;
+  transition: 0.3s;
+  &:hover {
+    color: ${({ theme }) => theme.color.linkColorHover};
+    border-color: unset;
+  }
+  &:visited {
+    color: ${({ theme }) => theme.color.linkColor};
+  }
 `;
