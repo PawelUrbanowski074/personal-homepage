@@ -9,4 +9,9 @@ export const ButtonLink = styled.a`
   color: ${({ theme }) => theme.color.buttonText};
   font-weight: 600;
   font-size: 20px;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.color.buttonBackgroundHover};
+  }
 `;
