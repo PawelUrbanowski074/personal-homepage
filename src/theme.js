@@ -1,27 +1,17 @@
 const colorNames = {
-  white: "#FFFFFF", //
-  whiteLilac: "#FBFBFE", //
-  scienceBlue: "#0366D6", //
-  violet2: "#090A3305",
-  violet3: "#090A3308",
+  white: "#FFFFFF",
+  whiteLilac: "#FBFBFE",
+  scienceBlue: "#0366D6",
+  scienceBlueHover: "#0255C5",
   iron: "#D1D5DA60",
-  slateGray: "#6E7E91", //
-  black: "#000000", //- ?
-  lightGray: "#E5E5E5", //mercury
+  ironHover: "#C1C5C080",
+  slateGray: "#6E7E91", 
+  lightGray: "#E5E5E5",
   mineShaft: "#252525",
-
-
-  blumine: "#1F5189",
   dodgerBlue: "#2188FF",
-  shipCove: "#6D93BE",
-  anakiwa: "#8CC2FF",
-  tropicalBlue: "#CDE0F7",
+  dodgerBlueHover: "#1077EE",
   ironTransparent: "rgba(209, 213, 218, 0.3)",
-  porcelain: "#F2F3F4", 
-  doveGray: "#6D6D6D",
-  tundora: "#414141",
-  
-  mineShaftLighter: "#313131",
+  mineShaftLighter: "#424242",
 };
 
 const common = {
@@ -35,52 +25,65 @@ const common = {
 export const themeLight = {
   ...common,
   color: {
+    background: colorNames.whiteLilac,
     textPrimary: colorNames.mineShaft,
+    textPrimaryHover: colorNames.scienceBlueHover,
     secondaryText: colorNames.slateGray,
+
     switchBackground: colorNames.lightGray,
     switchIcons: colorNames.slateGray,
+
     buttonBorder: colorNames.ironTransparent,
     buttonText: colorNames.white,
     buttonBackground: colorNames.scienceBlue,
+    buttonBackgroundHover: colorNames.scienceBlueHover,
+
     boxBackground: colorNames.white,
     boxBullet: colorNames.scienceBlue,
     headerBorderBottom: colorNames.iron,
+
     socialsColor: colorNames.mineShaft,
-    socialsHover: colorNames.scienceBlue,
+    socialsHover: colorNames.scienceBlueHover,
+    
     githubIcon: colorNames.scienceBlue,
     spinnerColor: colorNames.scienceBlue,
     ghBoxHeader: colorNames.scienceBlue,
-    linkColor: colorNames.scienceBlue,
-
-    text: colorNames.black,
-    background: colorNames.whiteLilac,
-    
-    
-    
-    
     border: colorNames.iron,
-    shadowBorder2: colorNames.violet2,
-    shadowBorder3: colorNames.violet3,
-  
-    
+    borderHover: colorNames.ironHover,
+    linkColor: colorNames.scienceBlue,
+    linkColorHover: colorNames.scienceBlueHover,
   },
 };
 
 export const themeDark = {
   ...common,
   color: {
-    text: colorNames.black,
-    secondaryText: colorNames.black,
-    background: colorNames.black,
-    buttonBacground: colorNames.black,
-    buttonText: colorNames.black,
-    sectionBackground: colorNames.black,
-    borderBottom: colorNames.black,
-    border: colorNames.black,
-    shadowBorder2: colorNames.black,
-    shadowBorder3: colorNames.black,
-    blueText: colorNames.black,
-    switchBackground: colorNames.black,
-    switchIcons: colorNames.black,
+    background: colorNames.mineShaft,
+    textPrimary: colorNames.white,
+    textPrimaryHover: colorNames.dodgerBlueHover,
+    secondaryText: colorNames.white,
+
+    switchBackground: colorNames.mineShaftLighter,
+    switchIcons: colorNames.mineShaft,
+
+    buttonBorder: colorNames.ironTransparent,
+    buttonText: colorNames.white,
+    buttonBackground: colorNames.dodgerBlue,
+    buttonBackgroundHover: colorNames.dodgerBlueHover,
+
+    boxBackground: colorNames.mineShaftLighter,
+    boxBullet: colorNames.dodgerBlue,
+    headerBorderBottom: colorNames.iron,
+
+    socialsColor: colorNames.white,
+    socialsHover: colorNames.dodgerBlueHover,
+    
+    githubIcon: colorNames.dodgerBlue,
+    spinnerColor: colorNames.dodgerBlue,
+    ghBoxHeader: colorNames.white,
+    border: colorNames.iron,
+    borderHover: colorNames.ironHover,
+    linkColor: colorNames.dodgerBlue,
+    linkColorHover: colorNames.dodgerBlueHover,
   },
 };
