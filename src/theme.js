@@ -31,7 +31,7 @@ export const themeLight = {
     secondaryText: colorNames.slateGray,
 
     switchBackground: colorNames.lightGray,
-    switchIcons: colorNames.slateGray,
+    switchIcons: colorNames.white,
 
     buttonBorder: colorNames.ironTransparent,
     buttonText: colorNames.white,
