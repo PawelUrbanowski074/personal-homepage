@@ -19,6 +19,11 @@ export const Mail = styled.a`
   font-weight: 900;
   font-size: 32px;
   letter-spacing: 0.05em;
+  transition:  0.3s;
+
+  &:hover {
+    color: ${({ theme }) => theme.color.textPrimaryHover};
+  }
 `;
 
 export const Description = styled.p`
