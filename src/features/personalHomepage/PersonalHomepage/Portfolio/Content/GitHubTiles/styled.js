@@ -7,6 +7,11 @@ export const List = styled.ul`
   margin-top: 24px;
   list-style: none;
   padding: 0;
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+  }
 `;
 
 export const Tile = styled.li`
@@ -22,6 +27,10 @@ export const Tile = styled.li`
   &:hover {
     border: 6px solid ${({ theme }) => theme.color.borderHover};
   }
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
+    padding: 20px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -30,12 +39,21 @@ export const Title = styled.h3`
   color: ${({ theme }) => theme.color.ghBoxHeader};
   margin: 0;
   text-transform: uppercase;
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
+    font-size: 16px;
+  }
 `;
 
 export const Description = styled.p`
   margin-top: 24px;
   line-height: 140%;
   color: ${({ theme }) => theme.color.secondaryText};
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
+    margin-top: 16px;
+    font-size: 14px;
+  }
 `;
 
 export const Links = styled.dl`
@@ -44,6 +62,11 @@ export const Links = styled.dl`
   line-height: 160%;
   margin: 24px 0 0 0;
   word-break: break-all;
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
+    font-size: 14px;
+    margin-top: 16px;
+  }
 `;
 
 export const LinksRow = styled.div`
@@ -62,10 +85,12 @@ export const LinkHref = styled.a`
   border-bottom: 1px solid ${({theme}) => theme.color.buttonBorder};
   padding-bottom: 1px;
   transition: 0.3s;
+
   &:hover {
     color: ${({ theme }) => theme.color.linkColorHover};
     border-color: unset;
   }
+  
   &:visited {
     color: ${({ theme }) => theme.color.linkColor};
   }
