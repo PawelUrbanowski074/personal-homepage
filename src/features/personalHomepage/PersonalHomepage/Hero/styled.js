@@ -8,12 +8,21 @@ export const Wrapper = styled.article`
   grid-template-columns: auto 1fr;
   grid-gap: 64px;
   align-items: center;
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    grid-gap: 12px;
+    grid-template-columns: 1fr;
+  }
 `;
 
-export const Image = styled.img`
-  width: 40vw;
+export const Image = styled.img` 
+  width: 30vw;
   border-radius: 50%;
   max-width: 384px;
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    width: 132px;
+  }
 `; 
 
 export const ThisIs = styled.div`
@@ -29,6 +38,11 @@ export const Name = styled.h1`
   line-height: 46px;
   margin: 12px 0 0 0;
   color: ${({ theme }) => theme.color.textPrimary};
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 22px;
+    margin-top: 8px;
+  }
 `;
 
 export const Description = styled.p`
@@ -37,12 +51,22 @@ export const Description = styled.p`
   margin: 36px 0 0 0;
   max-width: 650px;
   color: ${({ theme }) => theme.color.secondaryText};
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    margin-top: 16px;
+    font-size: 16px;
+    max-width: 570px;
+  }
 `;
 
 export const StyledButtonLink = styled(ButtonLink)`
   display: inline-flex;
   align-items: center;
   margin-top: 32px;
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    margin-top: 24px;
+  }
 `;
 
 export const HireMeIcon = styled(HireIcon)`

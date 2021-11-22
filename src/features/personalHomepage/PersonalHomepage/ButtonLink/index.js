@@ -14,4 +14,8 @@ export const ButtonLink = styled.a`
   &:hover {
     background-color: ${({ theme }) => theme.color.buttonBackgroundHover};
   }
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 18px;
+  }
 `;

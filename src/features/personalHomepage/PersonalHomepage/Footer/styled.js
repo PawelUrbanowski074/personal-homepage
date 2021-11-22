@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const Wrapper = styled.footer`
   margin-top: 120px;
+
+  @media(max-width: ${({theme}) => theme.breakpoint.mobileMax}px ){
+    margin-top: 48px;
+  }
 `;
 
 export const LetsTalk = styled.h2`
@@ -11,6 +15,10 @@ export const LetsTalk = styled.h2`
   letter-spacing: initial;
   color: ${({ theme }) => theme.color.secondaryText};
   margin: 0 0 24px 0;
+
+  @media(max-width: ${({theme}) => theme.breakpoint.mobileMax}px ){
+    margin: 0 0 16px 0;
+  }
 `;
 
 export const Mail = styled.a`
@@ -24,6 +32,10 @@ export const Mail = styled.a`
   &:hover {
     color: ${({ theme }) => theme.color.textPrimaryHover};
   }
+
+  @media(max-width: ${({theme}) => theme.breakpoint.mobileMax}px ){
+    font-size: 22px;
+  }
 `;
 
 export const Description = styled.p`
@@ -32,4 +44,8 @@ export const Description = styled.p`
   line-height: 140%;
   margin: 24px 0 0 0;
   color: ${({ theme }) => theme.color.textPrimary};
+
+  @media(max-width: ${({theme}) => theme.breakpoint.mobileMax}px ){
+    font-size: 14px;
+  }
 `;
