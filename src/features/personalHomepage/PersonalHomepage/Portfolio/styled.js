@@ -3,6 +3,10 @@ import { ReactComponent as GitHub } from "./Icons/github.svg";
 
 export const Section = styled.section`
   margin-top: 72px;
+  
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
+    margin-top: 48px;
+  }
 `;
 
 export const Header = styled.header`
@@ -22,6 +26,10 @@ export const Paragraph = styled.h3`
   font-weight: normal;
   font-size: 20px;
   margin-top: 8px;
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
+    font-size: 17px;
+  }
 `;
 
 export const GitHubIcon = styled(GitHub)`
