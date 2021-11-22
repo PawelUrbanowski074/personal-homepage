@@ -18,6 +18,10 @@ export const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.05em;
     word-wrap: break-word;
     padding-bottom: 108px;
+
+    @media(max-width: ${({theme }) => theme.breakpoint.mobileMax}px){
+      padding-bottom: 32px;
+    }
   }
 
   code {
