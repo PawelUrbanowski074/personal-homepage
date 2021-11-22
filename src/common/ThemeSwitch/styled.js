@@ -22,6 +22,10 @@ export const Text = styled.span`
   font-weight: bold;
   font-size: 12px; 
   margin-right: 12px;
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    display: none;
+  }
 `;
 
 export const Switcher = styled.span`
