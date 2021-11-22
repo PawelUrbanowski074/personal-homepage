@@ -8,6 +8,10 @@ export const Wrapper = styled.article`
   justify-items: center;
   grid-gap: 32px;
   color: ${({ theme }) => theme.color.textPrimary};
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
+    grid-gap: 24px;
+  }
 `;
 
 export const DangerIcon = styled(ErrorIcon)`
@@ -19,6 +23,10 @@ export const DangerIcon = styled(ErrorIcon)`
 export const Title = styled.header`
   font-weight: 700;
   font-size: 24px;
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
+    font-size: 17px;
+  }
 `;
 
 export const Description = styled.p`
@@ -26,4 +34,8 @@ export const Description = styled.p`
   line-height: 140%;
   max-width: 410px; //?
   margin: 0;
+
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
+    font-size: 16px;
+  }
 `;
