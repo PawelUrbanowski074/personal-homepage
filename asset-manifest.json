@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.f17cc4da.chunk.js",
-    "main.js.map": "/personal-homepage/static/js/main.f17cc4da.chunk.js.map",
+    "main.js": "/personal-homepage/static/js/main.7e627838.chunk.js",
+    "main.js.map": "/personal-homepage/static/js/main.7e627838.chunk.js.map",
     "runtime-main.js": "/personal-homepage/static/js/runtime-main.e860713f.js",
     "runtime-main.js.map": "/personal-homepage/static/js/runtime-main.e860713f.js.map",
     "static/js/2.a4152726.chunk.js": "/personal-homepage/static/js/2.a4152726.chunk.js",
@@ -16,7 +16,7 @@
     "static/media/Instagram.7ec35724.svg": "/personal-homepage/static/media/Instagram.7ec35724.svg",
     "static/media/LinkedIN.9f38a04c.svg": "/personal-homepage/static/media/LinkedIN.9f38a04c.svg",
     "static/media/Message.e6785718.svg": "/personal-homepage/static/media/Message.e6785718.svg",
-    "static/media/Switcher.c5032fa0.svg": "/personal-homepage/static/media/Switcher.c5032fa0.svg",
+    "static/media/Switcher.fdcfef78.svg": "/personal-homepage/static/media/Switcher.fdcfef78.svg",
     "static/media/bullet.41506939.svg": "/personal-homepage/static/media/bullet.41506939.svg",
     "static/media/github.c0b54586.svg": "/personal-homepage/static/media/github.c0b54586.svg",
     "static/media/icon-spinner.120dff0a.svg": "/personal-homepage/static/media/icon-spinner.120dff0a.svg",
@@ -25,6 +25,6 @@
   "entrypoints": [
     "static/js/runtime-main.e860713f.js",
     "static/js/2.a4152726.chunk.js",
-    "static/js/main.f17cc4da.chunk.js"
+    "static/js/main.7e627838.chunk.js"
   ]
 }
