@@ -4,19 +4,19 @@ const GitHubTiles = ({ repositories }) => {
 
   return (
     <List>
-      {repositories.map(({ id, name, description, homepage, html_url }) => (
+      {repositories.map(({ id, name, description, html_url }) => (
         <Tile key={id}>
           <Title>{name}</Title>
           <Description>{description}</Description>
           <Links>
-            {!!homepage && (
+            { !!name && (
               <LinksRow>
                 <dt>Demo:</dt>
                 <LinksValue>
-                  <LinkHref target="_blank" rel="noreferrer" href={homepage}>{homepage}</LinkHref>
+                  <LinkHref target="_blank" rel="noreferrer" href={`https://pawelurbanowski074.github.io/${name}/`}>{`https://pawelurbanowski074.github.io/${name}/`}</LinkHref>
                 </LinksValue>
               </LinksRow>
-            )}
+            )} 
             <LinksRow>
               <dt>Code:</dt>
               <LinksValue>
