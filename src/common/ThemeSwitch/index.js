@@ -3,15 +3,15 @@ import { selectIsDarkTheme, toggleTheme, } from "../themeSlice";
 import { Wrapper, Button, Text, Switcher, IconWrapper, Icon } from "./styled";
 
 const ThemeSwitch = () => {
-  const isDarkTheme = useSelector(selectIsDarkTheme);
+  const isLightTheme = useSelector(selectIsDarkTheme);
   const dispatch = useDispatch();
 
   return (
     <Wrapper>
       <Button onClick={() => dispatch(toggleTheme())}>
-        <Text>Dark mode {isDarkTheme ? "on" : "off"}</Text>
+        <Text>Light mode {isLightTheme ? "on" : "off"}</Text>
         <Switcher>
-          <IconWrapper moveToRight={isDarkTheme}>
+          <IconWrapper moveToRight={isLightTheme}>
             <Icon/>
           </IconWrapper>
         </Switcher>

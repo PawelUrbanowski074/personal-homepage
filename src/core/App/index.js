@@ -9,7 +9,7 @@ export const App = () => {
   const isDarkTheme = useSelector(selectIsDarkTheme);
 
   return (
-    <ThemeProvider theme={isDarkTheme ? themeDark : themeLight}>
+    <ThemeProvider theme={isDarkTheme ? themeLight : themeDark}>
       <GlobalStyle />
       <PersonalHomepage />
     </ThemeProvider>
