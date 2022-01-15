@@ -1,4 +1,4 @@
-https://pawelurbanowski074.github.io/homepage/
+https://pawelurbanowski074.github.io/personal-homepage/
 
 # Getting Started with Create React App
 
